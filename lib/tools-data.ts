@@ -5,11 +5,8 @@ export type PricingTier =
   | 'Free Trial (CC Required)'
 
 export type ToolCategory =
-  | 'CV / Resume'
-  | 'Cover Letter'
   | 'Job Search'
   | 'Interview Prep'
-  | 'AI Writing'
   | 'Productivity'
 
 export interface Tool {
@@ -30,11 +27,8 @@ export const PRICING_TIERS: PricingTier[] = [
 ]
 
 export const CATEGORIES: ToolCategory[] = [
-  'CV / Resume',
-  'Cover Letter',
   'Job Search',
   'Interview Prep',
-  'AI Writing',
   'Productivity',
 ]
 
@@ -42,9 +36,9 @@ export const TOOLS: Tool[] = [
   // ── Our Tools ─────────────────────────────────────────────────────────────
   {
     name: 'FreeCVCraft — Cover Letter',
-    description: 'AI-generated cover letters in seconds. No signup, no limits on reading.',
+    description: 'AI-generated cover letters in seconds. No signup, no credit card, no limits.',
     url: '/generate',
-    category: 'Cover Letter',
+    category: 'Job Search',
     pricing: 'Fully Free',
     ours: true,
   },
@@ -52,7 +46,7 @@ export const TOOLS: Tool[] = [
     name: 'FreeCVCraft — Resume Summary',
     description: 'Generate a sharp resume objective or professional summary instantly.',
     url: '/generate',
-    category: 'CV / Resume',
+    category: 'Job Search',
     pricing: 'Fully Free',
     ours: true,
   },
@@ -65,120 +59,53 @@ export const TOOLS: Tool[] = [
     ours: true,
   },
 
-  // ── CV / Resume ────────────────────────────────────────────────────────────
-  {
-    name: 'Canva Resume Builder',
-    description: 'Beautiful resume templates you can edit in the browser — no design skills needed.',
-    url: 'https://www.canva.com/resumes/',
-    category: 'CV / Resume',
-    pricing: 'Free with Limits',
-  },
-  {
-    name: 'Novoresume',
-    description: 'Clean, ATS-friendly resume builder with one free resume slot.',
-    url: 'https://novoresume.com',
-    category: 'CV / Resume',
-    pricing: 'Free with Limits',
-  },
-  {
-    name: 'Kickresume',
-    description: 'AI-assisted resume and cover letter builder with professional templates.',
-    url: 'https://www.kickresume.com',
-    category: 'CV / Resume',
-    pricing: 'Free with Limits',
-  },
-  {
-    name: 'Enhancv',
-    description: 'Modern resume builder focused on storytelling and impact.',
-    url: 'https://enhancv.com',
-    category: 'CV / Resume',
-    pricing: 'Free with Limits',
-  },
-  {
-    name: 'VisualCV',
-    description: 'Create and track your resume with analytics on who views it.',
-    url: 'https://www.visualcv.com',
-    category: 'CV / Resume',
-    pricing: 'Free with Limits',
-  },
-  {
-    name: 'Resume.io',
-    description: 'Fast, guided resume builder with polished templates.',
-    url: 'https://resume.io',
-    category: 'CV / Resume',
-    pricing: 'Free Trial (No CC)',
-  },
-  {
-    name: 'Google Docs Resume Templates',
-    description: 'Free resume templates built right into Google Docs — fully editable.',
-    url: 'https://docs.google.com/templates',
-    category: 'CV / Resume',
-    pricing: 'Fully Free',
-  },
-
-  // ── Cover Letter ───────────────────────────────────────────────────────────
-  {
-    name: 'Cover Letter Now',
-    description: 'Step-by-step cover letter builder with pre-written phrases.',
-    url: 'https://www.cover-letter-now.com',
-    category: 'Cover Letter',
-    pricing: 'Free with Limits',
-  },
-  {
-    name: 'MyPerfectResume',
-    description: 'Cover letter and resume builder with guided prompts.',
-    url: 'https://www.myperfectresume.com',
-    category: 'Cover Letter',
-    pricing: 'Free Trial (No CC)',
-  },
-
   // ── Job Search ─────────────────────────────────────────────────────────────
   {
     name: 'Indeed',
-    description: 'The world\'s largest job board — search millions of listings for free.',
+    description: 'The world\'s largest job board — search millions of listings, no account needed to browse.',
     url: 'https://www.indeed.com',
     category: 'Job Search',
     pricing: 'Fully Free',
   },
   {
-    name: 'LinkedIn Jobs',
-    description: 'Job listings, company research, and professional networking in one place.',
-    url: 'https://www.linkedin.com/jobs',
-    category: 'Job Search',
-    pricing: 'Free with Limits',
-  },
-  {
     name: 'Glassdoor',
-    description: 'Job listings with real salary data and company reviews from employees.',
+    description: 'Job listings plus real salary data and company reviews from employees.',
     url: 'https://www.glassdoor.com',
     category: 'Job Search',
     pricing: 'Fully Free',
   },
   {
     name: 'Otta',
-    description: 'Curated job matches at top tech and startup companies — no spam.',
+    description: 'Curated job matches at top tech and startup companies — no recruiter spam.',
     url: 'https://otta.com',
     category: 'Job Search',
     pricing: 'Fully Free',
   },
   {
     name: 'Wellfound (AngelList)',
-    description: 'Startup and tech jobs with transparent salary and equity info.',
+    description: 'Startup and tech jobs with transparent salary and equity info upfront.',
     url: 'https://wellfound.com',
     category: 'Job Search',
     pricing: 'Fully Free',
   },
   {
-    name: 'Huntr',
-    description: 'Visual job application tracker — kanban board for your job search.',
-    url: 'https://huntr.co',
+    name: 'LinkedIn Jobs',
+    description: 'Job listings, company research, and recruiter connections in one place.',
+    url: 'https://www.linkedin.com/jobs',
     category: 'Job Search',
     pricing: 'Free with Limits',
   },
   {
     name: 'Jobscan',
-    description: 'Scan your resume against a job description to optimize for ATS.',
+    description: 'Scan your resume against any job description to optimize for ATS systems.',
     url: 'https://www.jobscan.co',
+    category: 'Job Search',
+    pricing: 'Free with Limits',
+  },
+  {
+    name: 'Huntr',
+    description: 'Visual kanban board to track every job application through each stage.',
+    url: 'https://huntr.co',
     category: 'Job Search',
     pricing: 'Free with Limits',
   },
@@ -186,75 +113,38 @@ export const TOOLS: Tool[] = [
   // ── Interview Prep ─────────────────────────────────────────────────────────
   {
     name: 'Pramp',
-    description: 'Free peer-to-peer mock interviews for software engineering roles.',
+    description: 'Free peer-to-peer mock interviews for software engineering and data roles.',
     url: 'https://www.pramp.com',
     category: 'Interview Prep',
     pricing: 'Fully Free',
   },
   {
+    name: 'Interviewing.io',
+    description: 'Anonymous technical mock interviews with engineers from top companies.',
+    url: 'https://interviewing.io',
+    category: 'Interview Prep',
+    pricing: 'Free with Limits',
+  },
+  {
     name: 'Big Interview',
-    description: 'Practice answering common interview questions with video recording.',
+    description: 'Practice common interview questions with video recording and AI feedback.',
     url: 'https://biginterview.com',
     category: 'Interview Prep',
     pricing: 'Free Trial (No CC)',
   },
 
-  // ── AI Writing ─────────────────────────────────────────────────────────────
+  // ── Productivity ───────────────────────────────────────────────────────────
   {
-    name: 'ChatGPT',
-    description: 'General-purpose AI assistant — great for drafting, editing, and brainstorming.',
-    url: 'https://chat.openai.com',
-    category: 'AI Writing',
-    pricing: 'Free with Limits',
-  },
-  {
-    name: 'Claude.ai',
-    description: 'Anthropic\'s AI — strong at writing, summarizing, and long documents.',
-    url: 'https://claude.ai',
-    category: 'AI Writing',
-    pricing: 'Free with Limits',
+    name: 'Hemingway Editor',
+    description: 'Paste your cover letter or summary — instantly see readability and clarity issues.',
+    url: 'https://hemingwayapp.com',
+    category: 'Productivity',
+    pricing: 'Fully Free',
   },
   {
     name: 'Grammarly',
-    description: 'AI-powered grammar, tone, and clarity checker for all your writing.',
+    description: 'AI grammar, spelling, and tone checker — polish any text before sending.',
     url: 'https://www.grammarly.com',
-    category: 'AI Writing',
-    pricing: 'Free with Limits',
-  },
-  {
-    name: 'Hemingway Editor',
-    description: 'Paste your text to get instant readability and clarity feedback.',
-    url: 'https://hemingwayapp.com',
-    category: 'AI Writing',
-    pricing: 'Fully Free',
-  },
-  {
-    name: 'QuillBot',
-    description: 'AI paraphrasing, summarizing, and grammar checking tool.',
-    url: 'https://quillbot.com',
-    category: 'AI Writing',
-    pricing: 'Free with Limits',
-  },
-
-  // ── Productivity ───────────────────────────────────────────────────────────
-  {
-    name: 'Google Docs',
-    description: 'Free collaborative word processor — perfect for writing and sharing resumes.',
-    url: 'https://docs.google.com',
-    category: 'Productivity',
-    pricing: 'Fully Free',
-  },
-  {
-    name: 'Notion',
-    description: 'All-in-one workspace — track your job applications, notes, and goals.',
-    url: 'https://www.notion.so',
-    category: 'Productivity',
-    pricing: 'Free with Limits',
-  },
-  {
-    name: 'Trello',
-    description: 'Kanban boards for tracking job applications through each stage.',
-    url: 'https://trello.com',
     category: 'Productivity',
     pricing: 'Free with Limits',
   },
@@ -266,8 +156,15 @@ export const TOOLS: Tool[] = [
     pricing: 'Free with Limits',
   },
   {
+    name: 'Notion',
+    description: 'Track job applications, research companies, and keep notes all in one place.',
+    url: 'https://www.notion.so',
+    category: 'Productivity',
+    pricing: 'Free with Limits',
+  },
+  {
     name: 'Loom',
-    description: 'Record quick video introductions to attach to applications and stand out.',
+    description: 'Record a quick video intro to attach to applications and stand out from the crowd.',
     url: 'https://www.loom.com',
     category: 'Productivity',
     pricing: 'Free with Limits',
