@@ -58,10 +58,10 @@ export const TOOLS: Tool[] = [
   },
   {
     name: 'MissionAssist360',
-    description: 'Another free tool suite we built — check it out.',
+    description: 'Fleet management SaaS for trucking — invoices, dispatch, and more. Free trial, no credit card needed.',
     url: 'https://missionassist360.com',
     category: 'Productivity',
-    pricing: 'Fully Free',
+    pricing: 'Free Trial (No CC)',
     ours: true,
   },
 
