@@ -83,6 +83,9 @@ export default function Home() {
           <span className="font-bold text-lg tracking-tight">FreeCVCraft</span>
         </div>
         <div className="flex items-center gap-1">
+          <Link href="/free-tools">
+            <Button variant="ghost" size="sm" className="hidden sm:inline-flex">Free Tools</Button>
+          </Link>
           <ThemeToggle />
           <Link href="/generate">
             <Button size="sm" className="gap-1.5 ml-1">
@@ -315,6 +318,9 @@ export default function Home() {
           </div>
           <p>© {new Date().getFullYear()} FreeCVCraft · Free AI Cover Letter Generator</p>
           <div className="flex gap-5">
+            <Link href="/free-tools" className="hover:text-foreground transition-colors text-primary font-medium">
+              Free Tools
+            </Link>
             <Link href="/privacy" className="hover:text-foreground transition-colors">
               Privacy Policy
             </Link>

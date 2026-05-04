@@ -123,6 +123,9 @@ export default function GeneratePage() {
           <span className="font-bold text-base tracking-tight">FreeCVCraft</span>
         </div>
         <ThemeToggle />
+        <Link href="/free-tools">
+          <Button variant="ghost" size="sm" className="hidden sm:inline-flex">Free Tools</Button>
+        </Link>
       </header>
 
       <main className="flex-1 px-4 py-8 md:py-12">
