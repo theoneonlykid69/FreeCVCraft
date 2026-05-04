@@ -21,6 +21,9 @@ export const metadata: Metadata = {
     "free cover letter writer",
     "resume objective generator",
   ],
+  other: {
+    "google-adsense-account": "ca-pub-7243353622393380",
+  },
   openGraph: {
     title: "Free AI Cover Letter & Resume Summary Generator | FreeCVCraft",
     description:
