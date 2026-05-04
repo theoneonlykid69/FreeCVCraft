@@ -14,7 +14,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select'
-import { AdUnit } from '@/components/AdUnit'
 import { ThemeToggle } from '@/components/ThemeToggle'
 import { cn } from '@/lib/utils'
 import {
@@ -140,11 +139,6 @@ export default function GeneratePage() {
             <p className="text-muted-foreground text-sm">
               Fill in your details — get a polished result in seconds. Always free.
             </p>
-          </div>
-
-          {/* Top ad */}
-          <div className="mb-6">
-            <AdUnit slot="1122334455" format="horizontal" className="w-full" />
           </div>
 
           {/* Tab switcher */}
@@ -317,10 +311,6 @@ export default function GeneratePage() {
             </Card>
           </div>
 
-          {/* Bottom ad */}
-          <div className="mt-8">
-            <AdUnit slot="5566778899" format="horizontal" className="w-full" />
-          </div>
         </div>
       </main>
 

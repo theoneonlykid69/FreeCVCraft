@@ -43,16 +43,12 @@ export default function RootLayout({
         </Providers>
       </body>
 
-      {process.env.NEXT_PUBLIC_ADSENSE_PUBLISHER_ID &&
-        process.env.NEXT_PUBLIC_ADSENSE_PUBLISHER_ID !==
-          "ca-pub-XXXXXXXXXXXXXXXXX" && (
-          <Script
-            async
-            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_ADSENSE_PUBLISHER_ID}`}
-            crossOrigin="anonymous"
-            strategy="afterInteractive"
-          />
-        )}
+      <Script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7243353622393380"
+        crossOrigin="anonymous"
+        strategy="afterInteractive"
+      />
     </html>
   )
 }

@@ -2,7 +2,6 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { AdUnit } from "@/components/AdUnit"
 import { ThemeToggle } from "@/components/ThemeToggle"
 import {
   Zap,
@@ -174,11 +173,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Ad */}
-      <div className="max-w-4xl mx-auto w-full px-6 py-4">
-        <AdUnit slot="1234567890" format="horizontal" className="w-full" />
-      </div>
-
       {/* Features */}
       <section className="px-6 py-20 max-w-5xl mx-auto w-full">
         <div className="text-center mb-12">
@@ -309,11 +303,6 @@ export default function Home() {
           </Link>
         </div>
       </section>
-
-      {/* Bottom Ad */}
-      <div className="max-w-4xl mx-auto w-full px-6 py-6">
-        <AdUnit slot="0987654321" format="horizontal" className="w-full" />
-      </div>
 
       {/* Footer */}
       <footer className="border-t px-6 py-10 mt-auto">
